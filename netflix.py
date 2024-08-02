@@ -1,7 +1,5 @@
 # Netflix Forecast
 
-''' July 9, 2024 '''
-
 # Importing necessary Python libraries
 
 import pandas as pd
@@ -115,7 +113,7 @@ fig.add_trace(go.Scatter(x = forecast.index, y = forecast['Original'],
 fig.update_layout(title = 'Netflix Quarterly Subscription Predictions',
                   xaxis_title = 'Time Period',
                   yaxis_title = 'Subscribers',
-                  legend = dict(x=0.1, y=0.9),
+                  legend = dict(x = 0.1, y = 0.9),
                   showlegend = True)
 fig.show()
 
