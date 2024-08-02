@@ -25,12 +25,12 @@ print(data.head())
 # quarterly subscription growth
 
 fig = go.Figure() # pulling from 'import plotly.graph_objs as go'
-fig.add_trace(go.Scatter(x=data['Time Period'],
-                         y=data['Subscribers'],
-                         mode='lines', name='Subscribers'))
+fig.add_trace(go.Scatter(x = data['Time Period'],
+                         y = data['Subscribers'],
+                         mode = 'lines', name = 'Subscribers'))
 fig.update_layout(title='Netflix Quarterly Subscriptions Growth',
-                  xaxis_title='Date',
-                  yaxis_title='Netflix Subscriptions')
+                  xaxis_title = 'Date',
+                  yaxis_title = 'Netflix Subscriptions')
 fig.show()
 
 # Calculate the quarterly growth rate
@@ -45,7 +45,7 @@ fig.add_trace(go.Bar(
     x = data['Time Period'],
     y = data['Quarterly Growth Rate'],
     marker_color = data['Bar Color'],
-    name='Quarterly Growth Rate'
+    name = 'Quarterly Growth Rate'
 ))
 fig.update_layout(title='Netflix Quarterly Subscriptions Growth Rate',
                   xaxis_title='Time Period',
